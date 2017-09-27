@@ -27,18 +27,12 @@
   <div id = "myDiv" style="display:none"><img id = "myImage" src = "aLoader.gif">
   <style>
     
-  myDiv {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
+myDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
     </style>
   </div>
