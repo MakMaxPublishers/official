@@ -24,6 +24,22 @@
   
 </head>
 <body>
+  <div id= "myDiv" >
+<img src="LEGEND_20170928_201532.gif" img id="myDiv">
+<style>
+myDiv {
+
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;  
+}
+</style>
+</div>
+
+  
 <section class="menu cid-qvWAcxqfoV" id="menu2-3" data-rv-view="268">
     
     <!-- Block parameters controls (Blue "Gear" panel) -->
@@ -396,7 +412,24 @@
   <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
+  <script type="text/javascript">
+
+  (function(){
+    var myDiv = document.getElementById("myDiv"),
+
+      show = function(){
+        myDiv.style.display = "block";
+        setTimeout(hide, 5000); // 5 seconds
+      },
+
+      hide = function(){
+        myDiv.style.display = "none";
+      };
+
+    show();
+  })();
+
+</script>
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
     <input name="animation" type="hidden">
